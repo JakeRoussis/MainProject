@@ -49,10 +49,8 @@ def printOutput():
 
 # Clear list of who is and isn't home (Prevent duplicate push notification)
 def clearList():
-    for i,val in enumerate(isHome):
-        isHome.pop(i)
-    for i,val in enumerate(notHome):
-        notHome.pop(i)
+    isHome.clear()
+    notHome.clear()
 
 # Concatenate IFTT output string
 def createOutputString():
